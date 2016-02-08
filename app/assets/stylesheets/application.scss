@@ -1,2 +1,13 @@
-@import "foundation_and_overrides";
 @import "rcf";
+// file: app/assets/stylesheets/application.css.sass
+
+// include your config files (the variables file)
+@import "config/*";
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "materialize/components/color";
+$primary-color: color("green", "darken-1") !default;
+@import 'materialize';
+@import "materialize/extras/nouislider";

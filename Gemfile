@@ -46,5 +46,8 @@ group :development do
 end
 gem 'rails_12factor', group: :production
 
-
-gem 'foundation-rails'
+# Gemfile
+gem 'compass-rails'
+gem 'bower-rails'
+gem 'bootstrap-sass'
+  gem 'materialize-sass'
