@@ -9,7 +9,7 @@ default: &default
   pool: 5
   timeout: 5000
   user: KG
-  password: 'rcf'
+  password: 'Vegeta11!!@'
 
 development:
   <<: *default
