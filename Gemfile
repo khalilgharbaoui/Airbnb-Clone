@@ -47,4 +47,4 @@ end
 gem 'rails_12factor', group: :production
 
 
-gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
+gem 'foundation-rails'
