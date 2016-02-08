@@ -1,6 +1,17 @@
-<h1>Rent Cars Fast!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site</title>
+  <%= stylesheet_link_tag    :all %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= image_tag "logo.jpg" , class: "logo" %><br/>
+<div class="menu" ><%= image_tag "bannerleft.png" %></div><br/>
 
-<p>Rent unique cars from local hosts in 190+ countries.</p>
+<%= yield %>
 
-
-<p>Under construction...</p>
+</body>
+</html>
