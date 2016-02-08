@@ -1,4 +1,4 @@
-<h1>Add Car</h1>
+<h1>Add your car here and become a car host</h1>
 
 <%= form_for(@car) do |f| %>
 <div>
@@ -12,10 +12,10 @@
 </div>
 
 <div>
-  <p><%= f.image :image %></p>
+  <p><%= image_tag :image %></p>
 </div>
 
 <div>
-  <%= f.submit "Save Car" %>
+  <%= f.submit "Upload your car" %>
 </div>
 <% end %>
