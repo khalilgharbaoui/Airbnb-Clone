@@ -1,0 +1,2 @@
+module RcfHelper
+end
