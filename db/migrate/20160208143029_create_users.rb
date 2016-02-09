@@ -1,9 +1,8 @@
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
-      t.string :model
-      t.references :owner
-      t.references :client
+      t.references :provider
+      t.references :consumer
       t.string :name
 
       t.timestamps null: false

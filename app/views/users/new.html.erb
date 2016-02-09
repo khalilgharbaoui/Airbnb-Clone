@@ -1,0 +1,28 @@
+<div class="">
+<h1>WELCOME TO THE RACE</h1>
+
+<div class="form">
+<%= form_for(@user) do |f| %>
+<div>
+  <p><%= f.label :name %></p>
+  <%= f.text_field :name %>
+</div>
+
+<h5>Log in with:</h5>
+<div>
+<img class="facebookimg" src="http://videostir.com/blog/wp-content/uploads/2015/10/add-a-video-to-facebook-profile-1024x576.jpg" />
+</div>
+
+<h5>Or use your email:</h5>
+
+<div>
+  <p><%= image_tag :image %></p>
+</div>
+
+<div>
+  <%= f.submit "Save User" %>
+</div>
+
+<% end %>
+</div>
+</div>
