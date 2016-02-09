@@ -4,9 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'rcf#index'
-  get 'cars#index'
- resources :cars
- resources :users
+
+  resources :cars
+  resources :users
 
 
 
