@@ -1,22 +1,18 @@
-<h1>Add your car here and become a car host</h1>
-
+<h1>New Car</h1>
 <%= form_for(@car) do |f| %>
-
-<div>
-  <p><%= f.label :model %></p>
-  <%= f.text_field :model %>
+<div class="car col-md-6">
+<div class="">
+  <%= f.label :model %>
+  <p><%= f.text_field :model %></p>
 </div>
-
-<div>
-  <p><%= f.label :description %></p>
-  <%= f.text_area :description %>
+<div class="">
+  <%= f.label :description %>
+  <p><%= f.text_area :description %></p>
 </div>
-
-<div>
+<div class="">
   <p><%= image_tag :image %></p>
 </div>
-
 <div>
-  <%= f.submit "Submit your car" %>
+<p><%= f.submit "Submit Car" %> <span class="btn btn-default"><%= link_to "Back", root_path %></span></p>
 </div>
 <% end %>
