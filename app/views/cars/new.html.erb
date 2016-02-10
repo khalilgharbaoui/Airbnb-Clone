@@ -1,46 +1,23 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="add_car">
-  <div>
-<h1>Add your car here and become a host</h1>
-</div>
-=======
-<%= content_for :body_class do
-"new"
-end %>
-
-
-<h1>Add your car here and become a car host</h1>
->>>>>>> b2c22feeac8931a258cbac84ed8228f66d669975
-
-||||||| merged common ancestors
+<%= content_for :body_class do "new" end %>
 <h1>Add your car here and become a car host</h1>
 
-=======
-<h1>New Car</h1>
->>>>>>> carlisting
-<%= form_for(@car) do |f| %>
-<<<<<<< HEAD
-
-||||||| merged common ancestors
-
 <div class="add_car">
-=======
-<div class="add_car">
->>>>>>> carlisting
+  <%= form_for(@car) do |f| %>
   <div>
-  <p><%= f.label :model %></p>
-  <%= f.text_field :model %>
-</div>
-<div class="">
-  <%= f.label :description %>
-  <p><%= f.text_area :description %></p>
-</div>
-<div class="">
-  <p><%= f.text_field :image %></p>
-</div>
-<div>
-<p><%= f.submit "Submit Car" %> <span class="btn btn-default"><%= link_to "Back", root_path %></span></p>
-</div>
+    <p><%= f.label :model %></p>
+    <%= f.text_field :model %>
+  </div>
+  <div class="">
+    <%= f.label :description %>
+    <p><%= f.text_area :description %></p>
+  </div>
+  <div class="">
+    <p><%= f.text_field :image %></p>
+  </div>
+  <div class="">
+    <p><%= f.submit "Submit Car" %>
+      <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    </p>
+  </div>
 </div>
 <% end %>
