@@ -1,18 +1,19 @@
 <h1>New Car</h1>
 <%= form_for(@car) do |f| %>
-<div class="car col-md-6">
-<div class="">
-  <%= f.label :model %>
-  <p><%= f.text_field :model %></p>
+<div class="add_car">
+  <div>
+  <p><%= f.label :model %></p>
+  <%= f.text_field :model %>
 </div>
 <div class="">
   <%= f.label :description %>
   <p><%= f.text_area :description %></p>
 </div>
 <div class="">
-  <p><%= image_tag :image %></p>
+  <p><%= f.text_field :image %></p>
 </div>
 <div>
 <p><%= f.submit "Submit Car" %> <span class="btn btn-default"><%= link_to "Back", root_path %></span></p>
+</div>
 </div>
 <% end %>
