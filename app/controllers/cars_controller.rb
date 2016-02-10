@@ -8,7 +8,7 @@ class CarsController < ApplicationController
   def new
       @car = Car.new
   end
-end
+
 
 # Create a car from the form params
   def create
@@ -18,3 +18,10 @@ end
       render :new
     end
   end
+
+private
+
+def car_params
+  params_require(:car).permit(:model, :description, :image)
+end
+end

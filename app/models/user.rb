@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
-  has_and_belongs_to_many :provider
-  has_and_belongs_to_many :consumer
+  has_many :provider
+  has_many :consumer
 end
