@@ -8,7 +8,7 @@ class ConsumersController < ApplicationController
     @consumer = Consumer.new
   end
 
-  # Create a provider from the form params
+  # Create a consumer from the form params
   def create
     if @consumer = Consumer.create(consumer_params)
       redirect_to root_path
