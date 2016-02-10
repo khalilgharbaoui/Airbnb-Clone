@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20160210162539) do
   create_table "consumers", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "search"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20160210162539) do
   create_table "providers", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "car"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
