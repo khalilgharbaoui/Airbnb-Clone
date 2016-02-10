@@ -1,0 +1,10 @@
+<article class="car">
+  <h1><%= @car.model %></h1>
+  <p><%= @car.description %></p>
+  <p><%= image_tag @car.image, :style => "width:100%;" %></p>
+  <p class="navigation">
+    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    <span class="btn btn-default"><%= link_to "Edit", edit_car_path(@car) %></span>
+    <span class="btn btn-default"><%= link_to "Destroy", car_path(@car), method: :delete %></span>
+  </p>
+</article>

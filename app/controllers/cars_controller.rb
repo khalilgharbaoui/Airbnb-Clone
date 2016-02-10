@@ -18,6 +18,34 @@ class CarsController < ApplicationController
     end
   end
 
+  def show
+  @car = Car.find(params[:id])
+  #    p "ID: #{@car.id}"
+end
+
+def edit
+  @car = Car.find(params[:id])
+end
+
+def update
+  @car = Car.find(params[:id])
+  if @car.update(car_params)
+    redirect_to @car
+  else
+    render :edit
+  end
+end
+
+def destroy
+  @car = Car.find(params[:id])
+
+  if @car.destroy
+    redirect_to root_path
+  else
+    redirect_to @car
+  end
+end
+
   private
 
   def car_params
