@@ -20,6 +20,6 @@ class ProvidersController < ApplicationController
   private
 
   def provider_params
-    params_require(:name).permit(:last_name, :email, :image)
+    params_require(:name).permit(:email, :image)
   end
 end

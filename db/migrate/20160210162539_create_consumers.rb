@@ -1,0 +1,11 @@
+class CreateConsumers < ActiveRecord::Migration
+  def change
+    create_table :consumers do |t|
+      t.string :name
+      t.string :email
+      t.references :user
+
+      t.timestamps null: false
+    end
+  end
+end
