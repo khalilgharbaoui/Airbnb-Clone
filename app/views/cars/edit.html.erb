@@ -1,0 +1,23 @@
+<h1>Edit Car</h1>
+<div class="car_form">
+<%= form_for(@car) do |f| %>
+<div class="">
+  <%= f.label :model %>
+  <p>
+    <%= f.text_field :model %></p>
+</div>
+<div class="">
+  <%= f.label :description %>
+  <p><%= f.text_area :description %></p>
+</div>
+<div class="">
+<p><%= image_tag @car.image, :style => "width:100px; height:auto; border:5px dotted gray" %></p>
+  <p><%= f.text_area :image %></p>
+</div>
+<div>
+  <p class="navigation">
+    <%= link_to "Back", root_path %> | <%= f.submit "Save Car" %>
+  </p>
+</div>
+</div>
+<% end %>

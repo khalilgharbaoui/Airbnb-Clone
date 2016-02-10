@@ -2,7 +2,7 @@
 <h1>WELCOME TO THE RACE</h1>
 
 <div class="form">
-<%= form_for(@user) do |f| %>
+<%= form_for(@consumer) do |f| %>
 <div>
   <p><%= f.label :name %></p>
   <%= f.text_field :name %>
@@ -11,17 +11,16 @@
 <h5>Log in with:</h5>
 <div>
 <img class="facebookimg" src="http://videostir.com/blog/wp-content/uploads/2015/10/add-a-video-to-facebook-profile-1024x576.jpg" />
+<img class="googleimg" src="http://wwwhatsnew.com/wp-content/uploads/2015/07/Google-Plus-Logo.png" />
 </div>
 
 <h5>Or use your email:</h5>
 
 <div>
-  <p><%= image_tag :image %></p>
-</div>
-
-<div>
   <%= f.submit "Save User" %>
 </div>
+
+<p><%= link_to "Find your dream car", :class => "btn btn-primary btn-lg orange darken-1" %>
 
 <% end %>
 </div>

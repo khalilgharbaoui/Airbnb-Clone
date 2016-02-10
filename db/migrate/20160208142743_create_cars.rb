@@ -3,8 +3,8 @@ class CreateCars < ActiveRecord::Migration
     create_table :cars do |t|
       t.string :model
       t.string :image
-      t.references :owner
       t.text :description
+      t.references :provider
 
       t.timestamps null: false
     end
