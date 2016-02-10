@@ -5,10 +5,9 @@ end %>
 <div class="row">
 <div class="col col s12 m6 l4">
   <article class="card-panel hoverable">
-    <p><%= car.image %></p>
+    <p><%= image_tag car.image, :class => "car-list-style" %></p>
       <h1><%= link_to car.model, car %></h1>
     <p><%= car.description %></p>
-
   </article>
 </div>
 </div>
