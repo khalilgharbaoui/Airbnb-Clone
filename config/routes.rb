@@ -7,7 +7,11 @@ Rails.application.routes.draw do
 
   resources :cars
   resources :users
+  resources :provider
+  resources :consumer
 
+  get 'consumer/:format' => 'consumer#index'
+  get 'provider/:format' => 'provider#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -15,8 +19,8 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  get '/provider/index' =>	'provider#index', as: :provider_index
-  get '/consumer/index' =>	'consumer#index', as: :consumer_index
+
+
   # Example resource route with options:
   #   resources :products do
   #     member do
