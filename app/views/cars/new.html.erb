@@ -1,8 +1,10 @@
-<h1>Add your car here and become a car host</h1>
+<div class="add_car">
+  <div>
+<h1>Add your car here and become a host</h1>
+</div>
 
 <%= form_for(@car) do |f| %>
 
-<div class="add_car">
   <div>
   <p><%= f.label :model %></p>
   <%= f.text_field :model %>
