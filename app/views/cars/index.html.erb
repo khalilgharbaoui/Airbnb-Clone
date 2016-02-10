@@ -1,7 +1,6 @@
-
+<%= content_for :body_class do "cars" end %>
+<div class="row">
 <%= render @cars %>
-
-
-
+</div>
 <br />
 <span class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><%= link_to "+", new_car_path %></i></span>

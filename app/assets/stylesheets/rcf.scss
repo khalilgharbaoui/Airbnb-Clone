@@ -1,4 +1,10 @@
-body {background-image: url("background.jpg")}
+@import "users";
+body {background-image: url("background1.jpg");
+background-size: 100%;
+background-position: center;}
+
+
+
 .homepage-block{
 padding-top: 30px;
 padding-bottom: 30px;
@@ -8,8 +14,12 @@ background-color: rgba(19, 19, 19, 0.91) !important;
 width:500px;
 }
 
+body.new {background-image: url("background5.jpg");
+background-size: 100%}
+
+
 .usersback {background-image: url("http://images.designtrends.com/wp-content/uploads/2015/11/25111908/Car-Background-Designs34.jpg")}
-.form{
+li.form{
 padding: 30px;
 margin-bottom: 30px;
 color: inherit;
@@ -22,9 +32,14 @@ width: 150px;
 height: 75px;
 
 }
+<<<<<<< HEAD
 
 .googleimg {
 width: 150px;
 height: 75px;
+=======
+div.row:nth-child(1) > div:nth-child(1) > article:nth-child(1) > p:nth-child(1) > img:nth-child(1)
+.car-list-style img { width: 100%;
+>>>>>>> fdc3fb9413d0e123b4165efa13bd0610f17b0f23
 
 }

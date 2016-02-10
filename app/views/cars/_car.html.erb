@@ -1,10 +1,7 @@
-<div class="row">
-<div class="col col s12 m6 l4">
+<div class="col col s12 m6 l3">
   <article class="card-panel hoverable">
-    <p><%= car.image %></p>
+    <p><%= image_tag car.image, :style => "width:100%;" %></p>
       <h1><%= link_to car.model, car %></h1>
     <p><%= car.description %></p>
-
   </article>
-</div>
 </div>

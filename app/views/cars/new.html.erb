@@ -1,22 +1,23 @@
+<%= content_for :body_class do "new" end %>
 <h1>Add your car here and become a car host</h1>
 
-<%= form_for(@car) do |f| %>
-
-<div>
-  <p><%= f.label :model %></p>
-  <%= f.text_field :model %>
-</div>
-
-<div>
-  <p><%= f.label :description %></p>
-  <%= f.text_area :description %>
-</div>
-
-<div>
-  <p><%= image_tag :image %></p>
-</div>
-
-<div>
-  <%= f.submit "Submit your car" %>
+<div class="car_form">
+  <%= form_for(@car) do |f| %>
+  <div>
+    <p><%= f.label :model %></p>
+    <%= f.text_field :model %>
+  </div>
+  <div class="">
+    <%= f.label :description %>
+    <p><%= f.text_area :description %></p>
+  </div>
+  <div class="">
+    <p><%= f.text_field :image %></p>
+  </div>
+  <div class="">
+    <p><%= f.submit "Submit Car" %>
+      <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    </p>
+  </div>
 </div>
 <% end %>

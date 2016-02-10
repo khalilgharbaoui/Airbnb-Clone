@@ -4,13 +4,12 @@ class CarsController < ApplicationController
     @cars = Car.all
   end
 
-# Add a new car as a provider
+  # Add a new car as a provider
   def new
-      @car = Car.new
+    @car = Car.new
   end
 
-
-# Create a car from the form params
+  # Create a car from the form params
   def create
     if @car = Car.create(car_params)
       redirect_to root_path
@@ -19,9 +18,37 @@ class CarsController < ApplicationController
     end
   end
 
-private
-
-def car_params
-  params_require(:car).permit(:model, :description, :image)
+  def show
+  @car = Car.find(params[:id])
+  #    p "ID: #{@car.id}"
 end
+
+def edit
+  @car = Car.find(params[:id])
+end
+
+def update
+  @car = Car.find(params[:id])
+  if @car.update(car_params)
+    redirect_to @car
+  else
+    render :edit
+  end
+end
+
+def destroy
+  @car = Car.find(params[:id])
+
+  if @car.destroy
+    redirect_to root_path
+  else
+    redirect_to @car
+  end
+end
+
+  private
+
+  def car_params
+    params.require(:car).permit(:model, :description, :image)
+  end
 end
