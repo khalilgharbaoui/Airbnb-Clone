@@ -1,0 +1,10 @@
+<article class="provider">
+  <h1><%= @provider.name %></h1>
+  <p><%= @provider.email %></p>
+
+  <p class="navigation">
+    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    <span class="btn btn-default"><%= link_to "Edit", edit_provider_path(@provider) %></span>
+    <span class="btn btn-default"><%= link_to "Destroy", provider_path(@provider), method: :delete %></span>
+  </p>
+</article>

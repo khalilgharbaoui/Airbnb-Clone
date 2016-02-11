@@ -12,7 +12,7 @@ class CarsController < ApplicationController
   # Create a car from the form params
   def create
     if @car = Car.create(car_params)
-      redirect_to root_path
+      redirect_to cars_path
     else
       render :new
     end
@@ -49,6 +49,6 @@ end
   private
 
   def car_params
-    params.require(:car).permit(:model, :description, :image)
+    params.require(:car).permit(:model, :description, :image, :begin_date, :end_date, :price, :adress)
   end
 end
