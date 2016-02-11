@@ -1,55 +1,48 @@
 @import "users";
-body {background: #000 url('page-bg.png') repeat-x 0 0;}
-
-
-
-.homepage-block{
-padding-top: 30px;
-padding-bottom: 30px;
-margin-bottom: 30px;
-margin-left: 10px;
-color: inherit;
-background-color: rgba(19, 19, 19, 0.91) !important;
-width:500px;
+body {
+  background: #000 url('page-bg.png') repeat-x 0 0;
 }
-
-body.new {background-image: url("background5.jpg");
-background-size: 100%}
-
-
-.usersback {background-image: url("http://images.designtrends.com/wp-content/uploads/2015/11/25111908/Car-Background-Designs34.jpg")}
-li.form{
-padding: 30px;
-margin-bottom: 30px;
-color: inherit;
-background-color: rgba(19, 19, 19, 0.91) !important;
-width:500px;
+.homepage-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  color: inherit;
+  background-color: rgba(19, 19, 19, 0.91) !important;
+  width: 500px;
 }
-
+body.new {
+  background-image: url("background5.jpg");
+  background-size: 100%;
+}
+.usersback {
+  background-image: url("http://images.designtrends.com/wp-content/uploads/2015/11/25111908/Car-Background-Designs34.jpg");
+}
+li.form {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: rgba(19, 19, 19, 0.91) !important;
+  width: 500px;
+}
 .facebookimg {
-width: 150px;
-height: 75px;
-
+  width: 150px;
+  height: 75px;
 }
-
-
 .car_form {
-padding: 30px;
-margin-bottom: 30px;
-color: inherit;
-background-color: rgba(19, 19, 19, 0.91) !important;
-width:500px;
-
-
-.googleimg {
-width: 150px;
-height: 75px;
-
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: rgba(19, 19, 19, 0.91) !important;
+  width: 500px;
 }
-
-.users_block{
-padding: 30px;
-color: inherit;
-background-color: rgba(19, 19, 19, 0.91) !important;
-width:500px;
+.googleimg {
+  width: 150px;
+  height: 75px;
+}
+.users_block {
+  padding: 30px;
+  color: inherit;
+  background-color: rgba(19, 19, 19, 0.91) !important;
+  width: 500px;
 }
