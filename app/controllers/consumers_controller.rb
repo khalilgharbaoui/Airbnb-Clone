@@ -11,7 +11,7 @@ class ConsumersController < ApplicationController
   # Create a consumer from the form params
   def create
     if @consumer = Consumer.create(consumer_params)
-      redirect_to root_path
+      redirect_to cars_path
     else
       render :new
     end
