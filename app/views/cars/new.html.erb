@@ -5,27 +5,27 @@
 <div class="car_form">
   <%= form_for(@car) do |f| %>
   <div>
-    <p><%= f.label :model %></p>
+    <p><%= f.label "Car model" %></p>
     <%= f.text_field :model %>
   </div>
   <div class="">
-    <%= f.label :description %>
+    <%= f.label "Desctription of car:" %>
     <p><%= f.text_area :description %></p>
     </div>
     <div>
-    <%= f.label :begin_date %>
+    <%= f.label "Available from:" %>
 <p><%= f.text_field :begin_date %></p>
     </div>
     <div>
-    <%= f.label :end_date %>
+    <%= f.label "Available until:" %>
 <p><%= f.text_field :end_date %></p>
 </div>
 <div>
-<%= f.label :price %>
+<%= f.label "Price per day:" %>
 <p><%= f.text_field :price %></p>
     </div>
     <div>
-    <%= f.label :location %>
+    <%= f.label "Pick up location:" %>
     <p><%= f.text_field :location %></p>
         </div>
   <div class="">
