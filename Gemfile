@@ -51,5 +51,6 @@ gem 'compass-rails'
 gem 'bower-rails'
 gem 'bootstrap-sass'
   gem 'materialize-sass'
-
+gem 'bootstrap-social-rails'
+gem "font-awesome-rails"
   gem 'devise'
