@@ -30,7 +30,7 @@ bond = Consumer.create(
 name: "Bond James Bond", email: "bond@ziggo.nl"
   )
 
-# cars
+#  cars
 bmw = Car.create(
 model: "BMW", description: "Awesome and fast car, perfect to pick up girls and show off", image: "http://www.wired.com/wp-content/uploads/2014/05/088_BMW_i8-new.jpg", begin_date: Date.parse("2010-01-01"), end_date: Date.parse("2010-01-01"), price: 5000, location: "Amsterdam", provider_id: petersen.id
 )
