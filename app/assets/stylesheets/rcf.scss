@@ -8,7 +8,7 @@ body {
   margin-bottom: 30px;
   margin-left: 10px;
   color: inherit;
-  background-color: rgba(19, 19, 19, 0.91) !important;
+  background-color: rgba(19, 19, 19, 0) !important;
   width: 500px;
 }
 body.new {
@@ -46,3 +46,16 @@ li.form {
   background-color: rgba(19, 19, 19, 0.91) !important;
   width: 500px;
 }
+
+//new style
+.navbar-default {
+    background-color: rgba(19, 19, 19, 0.91) !important;
+    border-color: rgba(19, 19, 19, 0.91) !important;
+}
+
+.navbar-default .navbar-nav > li > a, .badge{
+    color: #fff !important;
+}
+
+
+.homepage-btn {width: 94%; margin:3%;text-align: center;}

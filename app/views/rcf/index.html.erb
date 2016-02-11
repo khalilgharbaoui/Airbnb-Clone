@@ -1,12 +1,21 @@
-<div class="jumbotron homepage-block">
+<div class="row">
+  <div class="col-md-6">
 
-  <h1>Car rental</h1>
-  <%= image_tag "logo.jpg" %>
-  <p>.............</p>
-
-  <p><%= link_to "Add car", new_provider_path, :class => "btn btn-primary btn-lg green darken-1" %> <%= link_to "Rent a car", new_consumer_path, :class => "btn btn-primary btn-lg  green darken-1" %></p>
-
-<h2>TESTING BUTTONS</h2>
-  <p><%= link_to "Add car", new_car_path, :class => "btn btn-primary btn-lg green darken-1" %> <%= link_to "Rent a car", cars_path, :class => "btn btn-primary btn-lg  green darken-1" %></p>
-
+    <div align="center"><%= image_tag "logo.png" %></div>
+<br /><br /><br />
+      <div class="col-md-6">
+      <%= link_to "Rent a car", new_consumer_path, :class => "btn btn-primary btn-lg  red darken-1 homepage-btn" %>
+      </div>
+      <div class="col-md-6">
+        <%= link_to "Add car", new_provider_path, :class => "btn btn-primary btn-lg blue darken-1 homepage-btn" %>
+      </div>
+    </div>
+  <div class="col-md-6"></div>
 </div>
+
+
+
+<!--
+<div class="jumbotron homepage-block"></div>
+<h2>TESTING BUTTONS</h2>
+  <p><%= link_to "Add car", new_car_path, :class => "btn btn-primary btn-lg green darken-1" %> <%= link_to "Rent a car", cars_path, :class => "btn btn-primary btn-lg  green darken-1" %></p> -->
