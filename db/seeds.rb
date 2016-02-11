@@ -38,7 +38,7 @@ oldtime = Car.create(
 model: "Oldtime", description: "Fancy a ride in a real oldtimer? Make sure you select this baby", image: "http://www.ruhrnachrichten.de/storage/pic/mdhl/artikelbilder/leben/3961193_1_OLDTIMER_17-RP_2.jpg?version=1386754138", begin_date: Date.parse("2010-01-01"), end_date: Date.parse("2010-01-01"), price: 5000, location: "Amsterdam", provider_id: murray.id
 )
 funny = Car.create(
-model: "Funny car", description: "Experience this amazing car, and reach your destination in style", imgae: "http://media.gadgetblog.it/p/pim/pimp-my-wagen/new_beetle_tartaruga_wagen.jpg", begin_date: Date.parse("2010-01-01"), end_date: Date.parse("2010-01-01"), price: 5000, location: "Amsterdam", provider_id: summer.id
+model: "Funny car", description: "Experience this amazing car, and reach your destination in style", image: "http://media.gadgetblog.it/p/pim/pimp-my-wagen/new_beetle_tartaruga_wagen.jpg", begin_date: Date.parse("2010-01-01"), end_date: Date.parse("2010-01-01"), price: 5000, location: "Amsterdam", provider_id: summer.id
 )
 
 bmw = Car.create(
