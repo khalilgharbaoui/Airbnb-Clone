@@ -11,15 +11,46 @@ class ConsumersController < ApplicationController
   # Create a consumer from the form params
   def create
     if @consumer = Consumer.create(consumer_params)
-      redirect_to root_path
+      redirect_to cars_path
     else
       render :new
     end
   end
 
-  private
+#show page...
+  def show
+  @consumer = Consumer.find(params[:id])
+  #    p "ID: #{@consumer.id}"
+end
 
-  def consumer_params
-    params_require(:name).permit(:email)
+def edit
+  @consumer = Consumer.find(params[:id])
+end
+
+def update
+  @consumer = Consumer.find(params[:id])
+  if @consumer.update(consumer_params)
+    redirect_to @consumer
+  else
+    render :edit
   end
+end
+
+def destroy
+  @consumer = Consumer.find(params[:id])
+
+  if @consumer.destroy
+    redirect_to root_path
+  else
+    redirect_to @consumer
+  end
+end
+
+
+
+private
+
+def consumer_params
+  params.require(:consumer).permit(:name, :email)
+end
 end

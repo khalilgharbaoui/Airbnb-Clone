@@ -1,0 +1,10 @@
+<article class="consumer">
+  <h1><%= @consumer.name %></h1>
+  <p><%= @consumer.email %></p>
+
+  <p class="navigation">
+    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    <span class="btn btn-default"><%= link_to "Edit", edit_consumer_path(@consumer) %></span>
+    <span class="btn btn-default"><%= link_to "Destroy", consumer_path(@consumer), method: :delete %></span>
+  </p>
+</article>

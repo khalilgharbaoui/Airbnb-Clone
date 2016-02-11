@@ -1,43 +1,44 @@
 <div class="">
-<div class="loging_header">
-<h1>Welcome to <em>RCF</em> website.</h1>
-</div>
+  <div class="loging_header">
+    <h1>Welcome to
+      <em>RCF</em>
+      website.</h1>
+  </div>
 
-<div class="motto">
-<p>Exclusive cars for rent any time, any where just for you.</p>
-</div>
+  <div class="motto">
+    <p>Exclusive cars for rent any time, any where just for you.</p>
+  </div>
 
-<div class="users_block">
-<%= form_for(@consumer) do |f| %>
-<div>
-  <p><%= f.label :name %></p>
-  <%= f.text_field :name %>
-</div>
+  <div class="users_block">
+    <%= form_for(@consumer) do |f| %>
+    <div>
+      <p><%= f.label :name %></p>
+      <%= f.text_field :name %>
+    </div>
 
-<div>
-  <p><%= f.label :email %></p>
-  <%= f.text_field :email %>
-</div>
+    <div>
+      <p><%= f.label :email %></p>
+      <%= f.text_field :email %>
+    </div>
 
-<h5>Log in with:</h5>
-<div>
-<a href="https://www.facebook.com">
-<img class="facebookimg" src="http://videostir.com/blog/wp-content/uploads/2015/10/add-a-video-to-facebook-profile-1024x576.jpg" />
-</div>
+    <h5>Or Log in with:</h5>
+    <div>
+      <a href="https://www.facebook.com">
+        <img class="facebookimg" src="http://videostir.com/blog/wp-content/uploads/2015/10/add-a-video-to-facebook-profile-1024x576.jpg"/>
+      </div>
 
-<div>
-  <a href="https://plus.google.com/up/accounts/upgrade/?continue=https://plus.google.com/">
-<img class="googleimg" src="http://wwwhatsnew.com/wp-content/uploads/2015/07/Google-Plus-Logo.png" />
-</div>
+      <div>
+        <a href="https://plus.google.com/up/accounts/upgrade/?continue=https://plus.google.com/">
+          <img class="googleimg" src="http://wwwhatsnew.com/wp-content/uploads/2015/07/Google-Plus-Logo.png"/>
+        </div>
 
-<h5>Or use your email:</h5>
+        <div>
+          <%= f.submit "Submit Consumer", :class => "btn btn-primary btn-lg orange darken-1" %>
+        </div>
+        <div>
+          <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+        </div>
 
-<div>
-  <%= f.submit "Save User" %>
-</div>
-
-<p><%= link_to "Find your dream car", :class => "btn btn-primary btn-lg orange darken-1" %>
-
-<% end %>
-</div>
-</div>
+        <% end %>
+      </div>
+    </div>

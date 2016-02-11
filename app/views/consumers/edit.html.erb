@@ -1,0 +1,23 @@
+
+<div class="users_block">
+    <%= form_for(@consumer) do |f| %>
+    <div>
+      <p><%= f.label :name %></p>
+      <%= f.text_field :name %>
+    </div>
+
+    <div>
+      <p><%= f.label :email %></p>
+      <%= f.text_field :email %>
+    </div>
+
+
+        <div>
+          <%= f.submit "Edit Consumer", :class => "btn btn-primary btn-lg orange darken-1" %>
+        </div>
+        <div>
+          <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+        </div>
+
+        <% end %>
+      </div>

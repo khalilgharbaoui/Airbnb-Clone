@@ -12,7 +12,7 @@ class CarsController < ApplicationController
   # Create a car from the form params
   def create
     if @car = Car.create(car_params)
-      redirect_to root_path
+      redirect_to cars_path
     else
       render :new
     end

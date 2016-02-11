@@ -29,14 +29,11 @@
 <h5>Or use your email:</h5>
 
 <div>
-  <%= f.submit "Save User" %>
+  <%= f.submit "Submit Provider", :class => "btn btn-primary btn-lg orange darken-1" %>
 </div>
-
-<p><%= link_to "Offer your car for Rent", :class => "btn btn-primary btn-lg orange darken-1" %>
-
-  <div>
-    <%= f.submit "Save Car" %>
-  </div>
+<div>
+    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+</div>
 
 <% end %>
 </div>
