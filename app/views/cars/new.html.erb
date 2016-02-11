@@ -1,7 +1,8 @@
 <%= content_for :body_class do "new" end %>
 <h1>Add your car here and become a car host</h1>
 
-<div class="car_form">
+<div class="add_car">
+  <div class="middle">
   <%= form_for(@car) do |f| %>
   <div>
     <p><%= f.label :model %></p>
@@ -19,5 +20,6 @@
       <span class="btn btn-default"><%= link_to "Back", root_path %></span>
     </p>
   </div>
+</div>
 </div>
 <% end %>
