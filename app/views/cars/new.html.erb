@@ -1,4 +1,5 @@
 <%= content_for :body_class do "new" end %>
+
 <h1>Add your car here and become a car host</h1>
 
 <div class="car_form">
@@ -10,7 +11,23 @@
   <div class="">
     <%= f.label :description %>
     <p><%= f.text_area :description %></p>
-  </div>
+    </div>
+    <div>
+    <%= f.label :begin_date %>
+<p><%= f.text_field :begin_date %></p>
+    </div>
+    <div>
+    <%= f.label :end_date %>
+<p><%= f.text_field :end_date %></p>
+</div>
+<div>
+<%= f.label :price %>
+<p><%= f.text_field :price %></p>
+    </div>
+    <div>
+    <%= f.label :location %>
+    <p><%= f.text_field :location %></p>
+        </div>
   <div class="">
     <p><%= f.text_field :image %></p>
   </div>

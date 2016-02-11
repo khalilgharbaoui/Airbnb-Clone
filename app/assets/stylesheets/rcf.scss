@@ -7,6 +7,7 @@ body {background: #000 url('page-bg.png') repeat-x 0 0;}
 padding-top: 30px;
 padding-bottom: 30px;
 margin-bottom: 30px;
+margin-left: 10px;
 color: inherit;
 background-color: rgba(19, 19, 19, 0.91) !important;
 width:500px;
@@ -32,9 +33,18 @@ height: 75px;
 }
 
 
+.car_form {
+padding: 30px;
+margin-bottom: 30px;
+color: inherit;
+background-color: rgba(19, 19, 19, 0.91) !important;
+width:500px;
+
+
 .googleimg {
 width: 150px;
 height: 75px;
+
 }
 
 .users_block{
