@@ -21,7 +21,10 @@
       <%= f.text_field :email %>
     </div>
 
-    <h5>Or Log in with:</h5>
+    <div class="cinco">
+    <h5>Or log in with:</h5>
+    </div>
+
     <div>
 
       <a class="btn btn-block btn-social btn-github">
@@ -34,11 +37,12 @@
     <br>
     <br>
         <div>
-          <%= f.submit "Submit Consumer", :class => "btn btn-primary btn-lg yellow darken-2" %>
+          <%= f.submit "Submit Consumer", :class => "btn btn-primary btn-lg blue-grey darken-3" %>
         </div>
         <br>
+
         <div>
-          <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+          <span class= "btn btn-primary btn-lg blue-grey darken-3"><%= link_to "Back", root_path %></span>
         </div>
 
         <% end %>
