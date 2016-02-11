@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160211134930) do
     t.string   "model"
     t.string   "image"
     t.text     "description"
-    t.string   "adress"
+    t.string   "location"
     t.integer  "price"
     t.text     "begin_date"
     t.text     "end_date"

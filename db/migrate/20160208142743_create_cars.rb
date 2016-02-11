@@ -4,7 +4,7 @@ class CreateCars < ActiveRecord::Migration
       t.string :model
       t.string :image
       t.text :description
-      t.string :adress
+      t.string :location
       t.integer :price
       t.text :begin_date
       t.text :end_date
