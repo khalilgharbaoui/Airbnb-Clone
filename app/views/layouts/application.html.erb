@@ -29,8 +29,8 @@
     <ul class="nav navbar-nav navbar-right">
       <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
         <% if user_signed_in? %>
-        <li><%= link_to "Log out", destroy_use_session_path, :method => :delete, class: "btn btn-primary btn-lg"  %></li>
-        <li><%= link_to "Edit registration", new_user_registration_path, class: "btn btn-primary btn-lg"  %></li>
+        <li><%= link_to "Log out", destroy_user_session_path, :method => :delete, class: "btn btn-primary btn-lg"  %></li>
+        <li><%= link_to "Edit registration", edit_user_registration_path, class: "btn btn-primary btn-lg"  %></li>
       <% else %>
         <li><%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %></li>
       <li><%= link_to "Register", new_user_registration_path, class: "btn btn-primary btn-lg" %></li>
