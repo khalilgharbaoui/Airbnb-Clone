@@ -10,6 +10,22 @@
   <%= f.label :description %>
   <p><%= f.text_area :description %></p>
 </div>
+<div>
+<%= f.label "Available from:" %>
+<p><%= f.text_field :begin_date %></p>
+</div>
+<div>
+<%= f.label "Available until:" %>
+<p><%= f.text_field :end_date %></p>
+</div>
+<div>
+<%= f.label "Price per day:" %>
+<p><%= f.text_field :price %></p>
+</div>
+<div>
+<%= f.label "Pick up location:" %>
+<p><%= f.text_field :location %></p>
+    </div>
 <div class="">
 <p><%= image_tag @car.image, :style => "width:100px; height:auto; border:5px dotted gray" %></p>
   <p><%= f.text_area :image %></p>
