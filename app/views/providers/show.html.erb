@@ -6,28 +6,28 @@
 
 
 <div class="row">
-  <p><% @provider.cars.each do |c| %>
+  <p><% @provider.cars.each do |car| %>
 
-    <h1><%= link_to c.model, c %></h1>
-    <p><%= c.description %></p>
-    <p><%= image_tag c.image, :style => "width:100%;" %></p>
-    <p><%= c.begin_date %></p>
-    <p><%= c.end_date %></p>
-    <p><%= c.price %></p>
-    <p><%= c.location %></p>
+    <h1><%= link_to car.model, car %></h1>
+    <p><%= car.description %></p>
+    <p><%= image_tag car.image, :style => "width:100%;" %></p>
+    <p><%= car.begin_date %></p>
+    <p><%= car.end_date %></p>
+    <p><%= car.price %></p>
+    <p><%= car.location %></p>
 
 
     <p class="navigation">
-        <span class="btn btn-default"><%= link_to "Back", root_path %></span>
-        <span class="btn btn-default"><%= link_to "Edit", edit_car_path(@car) %></span>
-        <span class="btn btn-default"><%= link_to "Destroy", car_path(@car), method: :delete %></span>
+
+        <span class="btn btn-default"><%= link_to "Edit", edit_car_path(car) %></span>
+        <span class="btn btn-default"><%= link_to "Destroy", car_path(car), method: :delete %></span>
       </p>
   <% end %>
 
 </div>
 
 <p class="navigation">
-    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    <span class="btn btn-default"><%= link_to "Back", providers_path %></span>
     <span class="btn btn-default"><%= link_to "Edit", edit_provider_path(@provider) %></span>
     <span class="btn btn-default"><%= link_to "Destroy", provider_path(@provider), method: :delete %></span>
   </p>
