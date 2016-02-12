@@ -1,8 +1,5 @@
 class ThanksController < ApplicationController
   def index
+      @car = Car.find(params[:id])
 end
-
-def show
-  @car = Car.find
-  end
 end

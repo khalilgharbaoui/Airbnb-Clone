@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   resources :providers
   resources :consumers
   resources :thanks
-  resources :reservation
 
 
 
