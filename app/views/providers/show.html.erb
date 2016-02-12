@@ -2,7 +2,31 @@
   <h1><%= @provider.name %></h1>
   <p><%= @provider.email %></p>
 
-  <p class="navigation">
+
+
+
+<div class="row">
+  <p><% @provider.cars.each do |c| %>
+
+    <h1><%= link_to c.model, c %></h1>
+    <p><%= c.description %></p>
+    <p><%= image_tag c.image, :style => "width:100%;" %></p>
+    <p><%= c.begin_date %></p>
+    <p><%= c.end_date %></p>
+    <p><%= c.price %></p>
+    <p><%= c.location %></p>
+
+
+    <p class="navigation">
+        <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+        <span class="btn btn-default"><%= link_to "Edit", edit_car_path(@car) %></span>
+        <span class="btn btn-default"><%= link_to "Destroy", car_path(@car), method: :delete %></span>
+      </p>
+  <% end %>
+
+</div>
+
+<p class="navigation">
     <span class="btn btn-default"><%= link_to "Back", root_path %></span>
     <span class="btn btn-default"><%= link_to "Edit", edit_provider_path(@provider) %></span>
     <span class="btn btn-default"><%= link_to "Destroy", provider_path(@provider), method: :delete %></span>
