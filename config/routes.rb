@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'rcf#index'
+  get  '/users/sign_up(.:format)'
+
 
   resources :cars
   resources :users
@@ -13,6 +15,8 @@ Rails.application.routes.draw do
   resources :providers
   resources :consumers
   resources :thanks
+
+
 
 
 
