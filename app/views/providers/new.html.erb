@@ -19,20 +19,25 @@
   <%= f.text_field :email %>
 </div>
 
-
-<h5>Log in with:</h5>
-<div>
-<img class="facebookimg" src="http://videostir.com/blog/wp-content/uploads/2015/10/add-a-video-to-facebook-profile-1024x576.jpg" />
-<img class="googleimg" src="http://wwwhatsnew.com/wp-content/uploads/2015/07/Google-Plus-Logo.png" />
+<div class="cinco">
+<h5>Or log in with:</h5>
 </div>
 
-<h5>Or use your email:</h5>
+  <a href="https://github.com/" class="btn btn-block btn-social btn-github">
+    <span class="fa fa-github"></span> Sign in with GitHub
+  </a>
 
+  <a href="https://nl.linkedin.com/" class="btn btn-block btn-social btn-linkedin">
+    <span class="fa fa-linkedin"></span> Sign in with LinkedIn
+  </a>
+<br>
+<br>
 <div>
-  <%= f.submit "Submit Provider", :class => "btn btn-primary btn-lg orange darken-1" %>
+  <%= f.submit "Submit Provider", :class => "btn btn-primary btn-lg blue-grey darken-3" %>
 </div>
+<br>
 <div>
-    <span class="btn btn-default"><%= link_to "Back", root_path %></span>
+    <span class= "btn btn-primary btn-lg blue-grey darken-3"><%= link_to "Back", root_path %></span>
 </div>
 
 <% end %>

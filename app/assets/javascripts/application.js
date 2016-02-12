@@ -19,3 +19,5 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap-sprockets
 //= require materialize-sprockets
 //= require materialize/extras/nouislider
+*= require bootstrap-social
+*= require font-awesome
