@@ -1,3 +1,13 @@
+<div>
+<h1>See your reservation here</h1>
+<h1><%= @car.model %></h1>
+<p><%= @car.description %></p>
+<p><%= image_tag @car.image, :style => "width:100%;" %></p>
+<p><%= @car.begin_date %></p>
+<p><%= @car.end_date %></p>
+<p><%= @car.price %></p>
+<p><%= @car.location %></p>
+</div>
 
 <div class="jumbotron homepage-block">
 <h2> Thank you for your order </h2>

@@ -46,8 +46,6 @@ def destroy
   end
 end
 
-  private
-
   def car_params
     params.require(:car).permit(:model, :description, :image, :begin_date, :end_date, :price, :location)
   end
